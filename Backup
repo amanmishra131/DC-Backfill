@@ -1,0 +1,163 @@
+# version 1
+# from datetime import datetime
+
+# from flask import Flask, render_template, redirect, url_for, request
+# app = Flask(__name__)
+
+# @app.route("/")
+# def hello_world():
+#     return render_template('index.html')   
+
+# @app.route('/see/<int:Pid>/<string:start_date>/<string:end_date>/<int:size>')
+# def see(Pid, start_date, end_date, size):
+#     start_date = datetime.strptime(start_date, '%Y-%m-%d').strftime('%Y-%m-%d')
+#     end_date = datetime.strptime(end_date, '%Y-%m-%d').strftime('%Y-%m-%d')
+#     # result = f"Start Date: {start_date}, End Date: {end_date}, Size: {size}"
+#     result = { "d": Pid, "a" : start_date, "b" : end_date, "c" : size }
+#     return render_template('checkdata.html', result=result)
+
+
+# @app.route('/submit', methods = ['POST', 'GET']) 
+# def submit():
+#     if request.method == 'POST':
+#             Pid = int(request.form['Pid'])
+#             StartDate = str(request.form['StartDate'])
+#             EndDate = str(request.form['EndDate'])
+#             Size = int(request.form['Size'])
+#     res = 'see'
+#     return  redirect(url_for(res,Pid=Pid, start_date=StartDate , end_date=EndDate, size=Size  ))
+ 
+# app.run(debug = True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# version 2 :
+
+# import time
+# from datetime import datetime
+# import datetime
+# from Config import Config
+# from func import func 
+
+# from flask import Flask, render_template, redirect, url_for, request
+# app = Flask(__name__)
+
+# @app.route("/")
+# def hello_world():
+#     return render_template('index.html')   
+
+# @app.route('/see/<int:Pid>/<int:AN>/<string:start_date>/<string:end_date>/<int:size>')
+# def see(Pid, AN, start_date, end_date, size):    
+#     acc_no = AN
+#     account_name = Config.account_nos[acc_no]
+#     account = Config.creds[acc_no]['account']
+#     api_key = Config.creds[acc_no]['api_key']
+
+#     pipeline_id = Pid
+#     start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d')
+#     end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d')
+#     chunk_size = size
+
+#     result = {"e":AN, "d": pipeline_id, "a" : start_date, "b" : end_date, "c" : chunk_size }
+#     return render_template('checkdata.html', result=result)
+
+
+# @app.route('/submit', methods = ['POST', 'GET']) 
+# def submit():
+#     if request.method == 'POST':
+#             AN = int(request.form['AN'])
+#             Pid = int(request.form['Pid'])  
+#             StartDate = str(request.form['StartDate'])
+#             EndDate = str(request.form['EndDate'])
+#             Size = int(request.form['Size'])
+#     res = 'see'
+#     return  redirect(url_for(res,Pid=Pid, AN=AN, start_date=StartDate , end_date=EndDate, size=Size  ))
+ 
+# app.run(debug = True)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# version 3
+
+
+# import time
+# from datetime import datetime
+# import datetime
+# from Config import Config
+# from func import func 
+
+# from flask import Flask, render_template, redirect, url_for, request
+# app = Flask(__name__)
+
+# @app.route("/")
+# def hello_world():
+#     return render_template('index.html')   
+
+# @app.route('/see/<int:Pid>/<int:AN>/<string:start_date>/<string:end_date>/<int:size>')
+# def see(Pid, AN, start_date, end_date, size):    
+#     acc_no = AN
+#     account_name = Config.account_nos[acc_no]
+#     account = Config.creds[acc_no]['account']
+#     api_key = Config.creds[acc_no]['api_key']
+
+#     pipeline_id = Pid
+#     start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d')
+#     end_date = datetime.datetime.strptime(end_date, '%Y-%m-%d')
+#     chunk_size = size
+
+#     result = {
+#                 "a" : AN,
+#                 "b" : pipeline_id,
+#                 "c" : start_date,
+#                 "d" : end_date,
+#                 "e" : chunk_size,
+#                 "f" : account_name,
+#                 "g" : account,
+#                 "h" : api_key
+#             }
+#     return render_template('checkdata.html', result=result)
+
+
+# @app.route('/submit', methods = ['POST', 'GET']) 
+# def submit():
+#     if request.method == 'POST':
+#             AN = int(request.form['AN'])
+#             Pid = int(request.form['Pid'])  
+#             StartDate = str(request.form['StartDate'])
+#             EndDate = str(request.form['EndDate'])
+#             Size = int(request.form['Size'])
+#     res = 'see'
+#     return  redirect(url_for(res,Pid=Pid, AN=AN, start_date=StartDate , end_date=EndDate, size=Size  ))
+ 
+# app.run(debug = True)

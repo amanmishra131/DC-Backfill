@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Flask",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Flask"
+	}
+}
