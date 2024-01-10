@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        input {
+            margin-right: 70px;  
+        }
+
+        h1 {
+            background-color: #FFFDD0; /* Cream color */
+            padding: 10px; /* Add padding for better visibility */
+        }
+        table {
+            width: 25%;
+            border-collapse: collapse;
+ 
+            
+        }
+
+        th {
+            border: 1px solid #f37b22;
+            text-align: left;
+            padding: 4px;
+        }
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eef1f3   ; /* Light pink background color */
+        }
+        tr:nth-child(odd) {
+            background-color: #ffffff; /* Light pink background color */
+        }
+
+
+
+
+
+
+    </style>
+
+
+
+    <title>DC Backfill</title>
+</head>
+<body>
+ 
+    <span><img src="static/logo.png" height="40px"></span>
+    <span> <img src="static/download.png"> </span>
+    
+   
+    <div>
+        <table>
+            <tr>
+                <br>    
+                <th>No.</th>
+                <th>Company Name</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Better eing</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>CoffeeBean</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Therabody</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Blue Root</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>AstralBeauty</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Modern Gourmet</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Vita Cup</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Boisson</td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>MGP Caliper Covers</td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Urban Red</td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Lono Life</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form action = 'submit' method = 'post' target= "_blank" style="background-color: #f4f4f4; padding: 8px; " >  
+            <label for="AN">Account_No : </label> 
+            <input type="number" id="AN" name="AN"  style="width: 120px">            
+            
+            <label for="Pid"> PipelineId : </label> 
+            <input type="number" id="Pid" name="Pid"  style="width: 80px"> 
+
+            <label for="SD"> Start Date: </label> 
+            <input type="date" id="SD" name="StartDate" style= "border-color: rgb(253, 149, 103); border-radius: 5px;" > 
+
+            <label for="ED"> End Date :    </label> 
+            <input type="date" id="ED" name="EndDate" style= "border-color: #274d80; border-radius: 5px;" >
+
+            <label for="Size">  Chunk Size : </label> 
+            <input type="number" id="Size" name="Size"  style="width: 80px">
+            <input type="submit" value="Start Backfill" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+        </form>
+    </div>
+ 
+    <p style="color: forestgreen">
+        DataChannel is a No-Code SaaS platform to easily sync your data into a Data Warehouse of your choice. DataChannel is a unified ETL & Reverse ETL platform with 100+ pre-built integrations which allow you to easily move data to and from any data source into a data warehouse of your choice in minutes.
+    </p>
+
+</body>
+</html>

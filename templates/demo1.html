@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Processing Text</title>
+</head>
+<body>
+
+<form id="myForm" action="submit" method="post"  target= "_blank" style="background-color: #f4f4f4; padding: 8px; ">
+    <label for="AN">Account_No :</label>
+    <input type="number" id="AN" name="AN" style="width: 120px">
+
+    <label for="Pid">RR PipelineId :</label>
+    <input type="number" id="Pid" name="Pid" style="width: 80px">
+
+    <label for="SD"> Start Date:</label>
+    <input type="date" id="SD" name="StartDate" style="border-color: rgb(253, 149, 103); border-radius: 5px;">
+
+    <label for="ED"> End Date :</label>
+    <input type="date" id="ED" name="EndDate" style="border-color: #274d80; border-radius: 5px;">
+
+    <label for="Size"> Chunk Size :</label>
+    <input type="number" id="Size" name="Size" style="width: 80px">
+
+    <input type="submit" value="Start Backfill" onclick="showProcessing()" style="background-color: rgb(253, 149, 103); color: white; border-radius: 5px; font-size: 13px; height: 25px; width: 110px; border: none;">
+
+    <!-- Initially hide the processing text -->
+    <span id="processingText" style="display: none; margin-right: 5px;">Running...</span>
+</form>
+
+<script>
+    function showProcessing() {
+        // Show the processing text
+        document.getElementById('processingText').style.display = 'inline';
+
+        // You can also perform your form submission logic here
+
+        // For demo purposes, delaying hiding the processing text after 2 seconds
+        setTimeout(function () {
+            document.getElementById('processingText').style.display = 'none';
+        }, 8000);
+    }
+</script>
+
+</body>
+</html>
